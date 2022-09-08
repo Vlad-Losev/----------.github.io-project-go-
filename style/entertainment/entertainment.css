@@ -1,0 +1,50 @@
+.entertainment {
+  margin-bottom: 100px;
+}
+
+.entertainment_title-h2 {
+  margin-bottom: 45px;
+}
+
+.entertainment-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.entertainment__title-h3 {
+  position: absolute;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px; 
+  left: 40px;
+  bottom: 34px;
+}
+
+.entertainment__title-h3_indent {
+  bottom: 10px;
+}
+
+.vr-glasses {
+  position: relative;
+}
+
+.audio-system {
+  position: relative;
+}
+
+.karaoke {
+  position: relative;
+}
+
+.board-games {
+  position: relative;
+}
+
+.cinema-services {
+  position: relative;
+}
+
+.play-station {
+  position: relative;
+}

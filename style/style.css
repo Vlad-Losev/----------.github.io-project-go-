@@ -1,4 +1,6 @@
 @import url(./header/header.css);
+@import url(./game-over/game-over.css);
+@import url(./entertainment/entertainment.css);
 @import url(./halls/halls.css);
 @import url(./reserved/reserved.css);
 @import url(./about-us/about-us.css);
