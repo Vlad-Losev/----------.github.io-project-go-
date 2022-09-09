@@ -76,16 +76,16 @@
 }
 
 .network-list__item:hover {
-  background: #EADEED;
+  background: #a24bb7;
 }
 
 .network-list__item:focus {
-  background: #EADEED;
-  border: 1px solid #CD06FF;
+  background: #cf75e6;
+  border: 1px solid #120116;
 }
 
 .network-list__item:active {
-  background: #CD06FF;
+  background: #700d89;
 }
 
 .footer-wrapper1 {

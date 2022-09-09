@@ -57,13 +57,17 @@ fieldset {
 }
 
 .reserved__label:focus {
-  background: #FFFFFF;
+  background: #c880da;
   border: 3px solid #640AA3;
 }
 
 .reserved__label:active {
   background: #6C0287;
   border: 3px solid #FFFFFF;
+}
+
+.wrapper__radio-label input[type=radio]:checked + label {
+  background: #c880da;
 }
 
 .wrapper__radio-label {
