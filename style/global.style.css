@@ -54,3 +54,7 @@ fieldset {
   position: fixed;
   transform: scale(0);
 }
+
+input {
+  cursor: pointer;
+}

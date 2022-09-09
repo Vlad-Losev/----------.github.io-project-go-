@@ -1,4 +1,4 @@
-.reserver-container__color {
+.reserved-container__color {
   background: #440F51;
 }
 
@@ -52,15 +52,22 @@ fieldset {
 }
 
 .reserved__label:hover {
-  color: #666;
+  background: #EADEED;
+  border: 3px solid #640AA3;
+}
+
+.reserved__label:focus {
+  background: #FFFFFF;
+  border: 3px solid #640AA3;
+}
+
+.reserved__label:active {
+  background: #6C0287;
+  border: 3px solid #FFFFFF;
 }
 
 .wrapper__radio-label {
   display: inline-block;
-}
-
-.wrapper__radio-label input[type=radio]:checked + label {
-  background: tomato;
 }
 
 .reserved-hall {
@@ -92,7 +99,6 @@ fieldset {
   width: 27px;
   height: 27px;
   padding-top: 5px;
-  
 }
 
 .gaiety__checkbox-size {
@@ -110,8 +116,6 @@ fieldset {
 .gaiety-item {
   position: relative;
 }
-
-
 
 .order_input-name, .order_label-name {
   display: block;
@@ -192,4 +196,23 @@ fieldset {
   border-radius: 10px;
   margin-left: 780px;
   margin-bottom: 80px;
+}
+
+.order-button:hover {
+  background: #EADEED;
+  border: 3px solid #6C0287;
+}
+
+.order-button:focus {
+  background: #FFFFFF;
+  border: 3px solid #6C0287;
+}
+
+.order-button:active {
+  background: #EADEED;
+}
+
+.order_input-focus:focus {
+  background: #FFFFFF;
+  border: 3px solid #CD06FF;
 }

@@ -69,7 +69,23 @@
 
 .network-list__item {
   display: inline-block;
+  width: 48px;
+  height: 48px;
   margin-right: 20px;
+  border-radius: 50%;
+}
+
+.network-list__item:hover {
+  background: #EADEED;
+}
+
+.network-list__item:focus {
+  background: #EADEED;
+  border: 1px solid #CD06FF;
+}
+
+.network-list__item:active {
+  background: #CD06FF;
 }
 
 .footer-wrapper1 {
@@ -98,4 +114,16 @@
 
 .copyright__text_indent {
   line-height: 22px;
+}
+
+.contacts__interactive:hover {
+  background: #3a363a;
+}
+
+.contacts__interactive:focus {
+  background: #595359;
+}
+
+.contacts__interactive:active {
+  background: #676167;
 }

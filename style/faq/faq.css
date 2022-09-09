@@ -7,14 +7,15 @@
 }
 
 .list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fff;
   color: #1C1A1A;
   font-weight: 700;
   font-size: 24px;
-  padding: 30px 70px;
+  padding: 17px 70px;
   margin-bottom: 20px;
-  background-repeat: no-repeat;
-  position: relative;
 }
 
 .list__item:nth-child(even) {
@@ -22,7 +23,7 @@
   color: #fff;
 }
 
-.list__item:nth-child(even):after {
+/* .list__item:nth-child(even):after {
   content: "";
   width: 46px;
   height: 46px;
@@ -30,9 +31,9 @@
   position: absolute;
   right: 60px;
   top: 20px;
-}
+} */
 
-.list__item:nth-child(odd):after {
+/* .list__item:nth-child(odd):after {
   background-image: url(../faq/img/open-purple.svg);
   content: "";
   width: 46px;
@@ -40,8 +41,38 @@
   position: absolute;
   right: 60px;
   top: 20px;
-}
+} */
 
 .list {
   padding: 0;
+}
+
+.faq-link__img {
+  width: 46px;
+  height: 46px;
+}
+
+.faq-link__img:hover {
+  background: #EADEED;
+  border-radius: 50%;
+}
+
+.faq-link__img:focus {
+  background: #e5c0ef;
+}
+
+.faq-link__img:active {
+  background: #b96bce;
+}
+
+.faq-link__img_purple:hover {
+  background: #9912bb;
+}
+
+.faq-link__img_purple:focus {
+  background: #b11bd6;
+}
+
+.faq-link__img_purple:active {
+  background: #d959f9;
 }

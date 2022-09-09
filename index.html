@@ -12,24 +12,24 @@
     <header class="header">
       <nav class="nav">
         <a href="#" class="header__link">
-          <img src="./style/header/img/logo.svg" alt="логотип" class="header__logo">
+          <img class="header__logo header__interactive" src="./style/header/img/logo.svg" alt="логотип">
         </a>
 
         <ul class="header__list">
           <li class="header__item">
-            <a href="#halls" class="header__item-link">залы</a>
+            <a href="#halls" class="header__item-link header__interactive">залы</a>
           </li>
           <li class="header__item">
-            <a href="#about-us" class="header__item-link">О нас</a>
+            <a href="#about-us" class="header__item-link header__interactive">О&nbsp;нас</a>
           </li>
           <li class="header__item">
-            <a href="#reserved" class="header__item-link">Бронь</a>
+            <a href="#reserved" class="header__item-link header__interactive">Бронь</a>
           </li>
           <li class="header__item">
-            <a href="#reviews" class="header__item-link">отзывы</a>
+            <a href="#reviews" class="header__item-link header__interactive">отзывы</a>
           </li>
           <li class="header__item">
-            <a href="#contacts" class="header__item-link">Контакты</a>
+            <a href="#contacts" class="header__item-link header__interactive">Контакты</a>
           </li>
         </ul>
         <form action="https://jsonplaceholder.typicode.com/posts"
@@ -62,13 +62,13 @@
         </div>
 
         <form action="https://jsonplaceholder.typicode.com/posts"
-          method="POST" class="game-over__form">
-            <button class="game-over__button">Забронировать</button>
-          </form>
+        method="POST" class="game-over__form">
+          <button class="game-over__button">Забронировать</button>
+        </form>
 
-          <a href="#reserved" class="game-over__down">
-            <img src="./style/game-over/img/down.svg" alt="стрелка вниз" class="game-over__down-img">
-          </a>
+        <a href="#reserved" class="game-over__down">
+          <img class="game-over__down-img" src="./style/game-over/img/down.svg" alt="стрелка вниз">
+        </a>
       </section>
 
       <section class="entertainment">
@@ -144,7 +144,7 @@
         </figure>
       </section>
   </div>
-  <div class="reserver-container__color">
+  <div class="reserved-container__color">
     <div class="reserved-container__indent">
       <section class="reserved" id="reserved">
         <h2 class="reserved__title title-h2">Забронировать зал просто</h2>
@@ -248,32 +248,31 @@
 
             <div class="order__wrapper-date">
               <div class="order__wrapper-block1">
-                <input class="order_input-size2 order_input" type="date" name="date" id="date""required>
+                <input class="order_input-focus order_input-size2 order_input" type="date" name="date" id="date""required>
 
-                <input class="order_input-size2 order_input" type="time" name="time" id="time" required>
+                <input class="order_input-focus order_input-size2 order_input" type="time" name="time" id="time" required>
 
-                <input class="order_input-size3 order_input-number" type="number" name="amount" id="amount" placeholder="Сколько человек" required>
+                <input class="order_input-focus order_input-size3 order_input-number" type="number" name="amount" id="amount" placeholder="Сколько человек" required>
               </div>
 
               <div class="order__wrapper-block2">
                 <label class="order_label-name" for="name">Имя
-                  <input class="order_input-name order_input-size" type="search" name="name" id="name">
+                  <input class="order_input-focus order_input-name order_input-size" type="search" name="name" id="name">
                 </label>
                 
                   <label class="order_label-name" for="tel">Телефон
-                  <input class="order_input-name order_input-size3" type="tel" name="tel" id="tel" required>
+                  <input class="order_input-focus order_input-name order_input-size3" type="tel" name="tel" id="tel" required>
                 </label>
 
                 <label class="order_label-name" for="surname">Фамилия
-                  <input class="order_input-name order_input-size" type="search" name="surname" id="surname" required>
+                  <input class="order_input-focus order_input-name order_input-size" type="search" name="surname" id="surname" required>
                 </label>
 
                 <label class="order_label-name" for="email">E-mail
-                  <input class="order_input-name order_input-size3" type="email" name="email" id="email">
+                  <input class="order_input-focus order_input-name order_input-size3" type="email" name="email" id="email">
                 </label>
               </div>
               
-
               <!-- <input type="checkbox" name="age" value="yes" id="age">
               <label for="age">Я старше 18 лет</label> -->
             </div>
@@ -364,11 +363,41 @@
         <h2 class="faq__title title-h2">Частые вопросы</h2>
 
         <ul class="list">
-          <li class="list__item">Можно ли забронировать комнату онлайн?</li>
-          <li class="list__item">Могут ли мне вернуть деньги за бронь?</li>
-          <li class="list__item">Какая комната самая популярная?</li>
-          <li class="list__item">Как получить VIP карту?</li>
-          <li class="list__item">Какая комната самая популярная?</li>
+          <li class="list__item">
+            <div class="faq__text">Можно ли забронировать комнату онлайн?</div>
+
+            <a href="#" class="faq-link">
+              <img class="faq-link__img" src="./style/faq/img/open-purple.svg" alt="#">
+            </a>
+          </li>
+          <li class="list__item">
+            <div class="faq__text">Могут ли мне вернуть деньги за бронь?</div>
+
+            <a href="#" class="faq-link">
+              <img class="faq-link__img faq-link__img_purple" src="./style/faq/img/open.svg" alt="#" ">
+            </a>
+          </li>
+          <li class="list__item">
+            <div class="faq__text">Какая комната самая популярная?</div>
+
+            <a href="#" class="faq-link">
+              <img class="faq-link__img" src="./style/faq/img/open-purple.svg" alt="#">
+            </a>
+          </li>
+          <li class="list__item">
+            <div class="faq__text">Как получить VIP карту?</div>
+
+            <a href="#" class="faq-link">
+              <img class="faq-link__img" src="./style/faq/img/open.svg" alt="#">
+            </a>
+          </li>
+          <li class="list__item">
+            <div class="faq__text">Какая комната самая популярная?</div>
+
+            <a href="#" class="faq-link">
+              <img class="faq-link__img" src="./style/faq/img/open-purple.svg" alt="#">
+            </a>
+          </li>
         </ul>
       </section>
 
@@ -385,7 +414,7 @@
               <div class="wrapper-map">
                 <a class="map" href="#">
                   <div class="map__indent">
-                    <img class="map__img" src="./style/contacts/img/location.svg" alt="Значок локации">
+                    <img class="map__img contacts__interactive" src="./style/contacts/img/location.svg" alt="Значок локации">
 
                     <span class="map__text">г. Москва<br> ул. Аквамарина, 16</span>
                   </div>
@@ -394,7 +423,7 @@
 
               <div class="wrapper-tel">
                 <a class="link-contacts link-tel" href="tel:89509302893">
-                  <img class="link-tel__tel-img" src="./style/contacts/img/phone.svg" alt="Значок телефона" >
+                  <img class="link-tel__tel-img contacts__interactive" src="./style/contacts/img/phone.svg" alt="Значок телефона" >
 
                   <span class="link-tel__tel-text">8(950)930-28-93</span>
                 </a><br>
@@ -402,7 +431,7 @@
 
               <div class="wrapper-mail">
                 <a class="link-contacts link-mail" href="mailto:GameOver@gmail.com">
-                  <img class="link-mail__mail-img" src="./style/contacts/img/envelope.svg" alt="Значок конверта" >
+                  <img class="link-mail__mail-img contacts__interactive" src="./style/contacts/img/envelope.svg" alt="Значок конверта" >
                   <span class="link-mail__mail-text">GameOver@gmail.com</span>
                 </a>
               </div>

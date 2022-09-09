@@ -73,11 +73,34 @@
   padding: 25px 69px;
 }
 
+.game-over__button:hover, .game-over__button:focus {
+  background: #840AA3;
+}
+
+.game-over__button:active {
+  background: #640AA3;
+}
+
 .game-over__down {
   position: absolute;
   bottom: 115px;
   left: 539px;
+  border-radius: 50%;
+  width: 97px;
+  height: 97px;
 }
 
+.game-over__down:hover {
+  border: 1px solid #bc4bc2;  
+}
 
+.game-over__down:focus {
+  border: 1px solid #CD06FF;
+  border-radius: 0;
+}
 
+.game-over__down:active {
+  background: #CD06FF;
+  border: 1px solid #CD06FF;
+  border-radius: 50%;
+}
