@@ -1,8 +1,8 @@
-.reserved-container__color {
+.reserved-container-color {
   background: #440F51;
 }
 
-.reserved-container__indent {
+.reserved-container-indent {
   max-width: 1180px;
   margin: 0 auto;
 }
@@ -66,11 +66,12 @@ fieldset {
   border: 3px solid #FFFFFF;
 }
 
-.wrapper__radio-label input[type=radio]:checked + label {
+.reserved__radio-label input[type=radio]:checked + label {
   background: #c880da;
+  transition-duration: 0.7s;
 }
 
-.wrapper__radio-label {
+.reserved__radio-label {
   display: inline-block;
 }
 
@@ -121,32 +122,32 @@ fieldset {
   position: relative;
 }
 
-.order_input-name, .order_label-name {
+.order__input-name, .order__label-name {
   display: block;
 }
 
-.order_input-size {
+.order__input-size {
   width: 280px;
   height: 52px;
 }
 
-.order_input-size2 {
+.order__input-size2 {
   width: 134px;
   height: 52px;
 }
 
-.order_input-size3 {
+.order__input-size3 {
   width: 300px;
   height: 52px;
 }
 
-.order_label-name {
+.order__label-name {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
 }
 
-.order_input::-webkit-calendar-picker-indicator {
+.order__input::-webkit-calendar-picker-indicator {
   color: transparent;
   opacity: 1;
   background: url(./img/order-arrow.svg) no-repeat center;
@@ -158,14 +159,14 @@ fieldset {
   margin-bottom: 18px;
 }
 
-.order_input-number {
+.order__input-number {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   padding-left: 20px;
 }
 
-.order_input-number::-webkit-input-placeholder {
+.order__input-number::-webkit-input-placeholder {
   color: #211E1E;
 }
 
@@ -203,12 +204,12 @@ fieldset {
 }
 
 .order-button:hover {
-  background: #EADEED;
+  background: #d2b8d9;
   border: 3px solid #6C0287;
 }
 
 .order-button:focus {
-  background: #FFFFFF;
+  background: #ad7cb9;
   border: 3px solid #6C0287;
 }
 
@@ -216,7 +217,7 @@ fieldset {
   background: #EADEED;
 }
 
-.order_input-focus:focus {
+.order__input-focus:focus {
   background: #FFFFFF;
   border: 3px solid #CD06FF;
 }

@@ -2,7 +2,7 @@
   margin-bottom: 100px;
 }
 
-.entertainment_title-h2 {
+.entertainment__title-h2 {
   margin-bottom: 45px;
 }
 
@@ -47,4 +47,8 @@
 
 .play-station {
   position: relative;
+}
+
+.entertainment__img:hover {
+  transform: scale(1.1);
 }
