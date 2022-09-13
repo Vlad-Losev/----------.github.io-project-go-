@@ -47,7 +47,7 @@ fieldset {
   color: #000;
 	cursor: pointer;
   user-select: none;
-  background-color: #fff;
+  background-color: var(--main-color);
   border-radius: 8px;
 }
 
@@ -63,7 +63,7 @@ fieldset {
 
 .reserved__label:active {
   background: #6C0287;
-  border: 3px solid #FFFFFF;
+  border: 3px solid var(--main-color);
 }
 
 .reserved__radio-label input[type=radio]:checked + label {
@@ -218,6 +218,6 @@ fieldset {
 }
 
 .order__input-focus:focus {
-  background: #FFFFFF;
+  background: var(--main-color);
   border: 3px solid #CD06FF;
 }

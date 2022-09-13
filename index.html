@@ -76,26 +76,14 @@
         <h2 class="title-h2 entertainment__title-h2">У нас есть все для классного<br> 
           отдыха с друзьями!</h2>
 
-          <div class="entertainment-cards">
+        <div class="entertainment-cards">
             
-            <figure class="entertainment__img vr-glasses">
+          <div class="entertainment__block-flex1">
+            <figure class="entertainment__img vr-glasses ">
               <div class="img-block">
-              <img src="./style/entertainment/img/vr-glasses.png" alt="VR-очки">
+                <img src="./style/entertainment/img/vr-glasses.png" alt="VR-очки">
               </div>
               <h3 class="entertainment__title-h3">VR очки</h3>
-            </figure>
-
-            <figure class="entertainment__img audio-system">
-              <img src="./style/entertainment/img/audio-system.png" alt="аудио система">
-
-              <h3 class="entertainment__title-h3 entertainment__title-h3_indent">Аудио-система 5.1<br>
-                с отличным звуком</h3>
-            </figure>
-
-            <figure class="entertainment__img karaoke">
-              <img src="./style/entertainment/img/karaoke.png" alt="караоке">
-
-              <h3 class="entertainment__title-h3">Караоке (4 микрофона)</h3>
             </figure>
 
             <figure class="entertainment__img board-games">
@@ -103,20 +91,37 @@
 
               <h3 class="entertainment__title-h3">Настольные игры</h3>
             </figure>
+          </div>
+
+          <div class="entertainment__block-flex2">
+            <figure class="entertainment__img audio-system">
+              <img src="./style/entertainment/img/audio-system.png" alt="аудио система">
+
+              <h3 class="entertainment__title-h3 entertainment__title-h3_indent">Аудио-система 5.1<br>
+              с отличным звуком</h3>
+            </figure>
 
             <figure class="entertainment__img cinema-services">
               <img src="./style/entertainment/img/cinema-services.png" alt="кино сервисы">
 
               <h3 class="entertainment__title-h3 entertainment__title-h3_indent">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</h3>
             </figure>
+          </div>
+          
+          <div class="entertainment__block-flex3">
+            <figure class="entertainment__img karaoke">
+              <img src="./style/entertainment/img/karaoke.png" alt="караоке">
 
-            <figure class="entertainment__img play-station">
+              <h3 class="entertainment__title-h3">Караоке (4 микрофона)</h3>
+            </figure>
+
+             <figure class="entertainment__img play-station">
               <img src="./style/entertainment/img/play-station.png" alt="игровая приставка">
 
               <h3 class="entertainment__title-h3">РlаyStаtiоn 5</h3>
             </figure>
-            
           </div>
+
       </section>
     
       <section class="halls" id="halls">
@@ -336,7 +341,9 @@
 
           <article class="reviews">
             <figure class="reviews-figure">
-              <img class="reviews-figure__img" src="./style/reviews/img/maks.png" alt="Фото парня в черной кофте">
+              <div class="reviews-gradient">
+                <img class="reviews-figure__img" src="./style/reviews/img/maks.png" alt="Фото парня в черной кофте">
+              </div>
 
               <figcaption class="reviews-figure__text">Макс Самойлов</figcaption>
             </figure>
@@ -345,7 +352,9 @@
 
           <article class="reviews">
             <figure class="reviews-figure">
-              <img class="reviews-figure__img" src="./style/reviews/img/oksana.png" alt="Фото девушки в шляпе">
+              <div class="reviews-gradient">
+                <img class="reviews-figure__img" src="./style/reviews/img/oksana.png" alt="Фото девушки в шляпе">
+              </div>
 
               <figcaption class="reviews-figure__text">Оксана Григорьева</figcaption>
             </figure>
@@ -354,8 +363,10 @@
 
           <article class="reviews">
             <figure class="reviews-figure">
-              <img class="reviews-figure__img" src="./style/reviews/img/nikita.png" alt="Фото парня в бирюзовой толстовке">
-
+              <div class="reviews-gradient">
+                <img class="reviews-figure__img" src="./style/reviews/img/nikita.png" alt="Фото парня в бирюзовой толстовке">
+              </div>
+              
               <figcaption class="reviews-figure__text">Никита Ященко</figcaption>
             </figure>
             <p class="reviews__text">Немного подвисала игра в VR очках, а так все норм. Крутое<br> оформление комнаты в стиле звездных войн, попал в атмосферу<br> космоса</p>

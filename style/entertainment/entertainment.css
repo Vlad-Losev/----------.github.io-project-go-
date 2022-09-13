@@ -8,9 +8,22 @@
 
 .entertainment-cards {
   display: flex;
-  flex-wrap: wrap;
-  gap: 40px 20px;
+  height: 570px;
+  gap: 20px;
 }
+
+.entertainment__block-flex1 {
+  align-items: flex-start;
+}
+
+.entertainment__block-flex2 {
+  align-self: flex-end;
+}
+
+.entertainment__block-flex3 {
+  align-items: flex-start;
+}
+
 
 .entertainment__title-h3 {
   position: absolute;
@@ -27,14 +40,17 @@
 
 .vr-glasses {
   position: relative;
+  margin-bottom: 38px;
 }
 
 .audio-system {
   position: relative;
+  margin-bottom: 38px;
 }
 
 .karaoke {
   position: relative;
+  margin-bottom: 38px;
 }
 
 .board-games {

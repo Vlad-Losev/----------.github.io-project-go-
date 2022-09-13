@@ -45,7 +45,7 @@
   font-weight: 900;
   font-size: 100px;
   line-height: 141px;
-  color: #CD06FF;
+  color: var(--color-purple);
 }
 
 .game-over-flex__text {
@@ -59,7 +59,7 @@
   font-size: 75px;
   line-height: 106px;
   font-variant: small-caps;
-  color: #CD06FF;
+  color: var(--color-purple);
 }
 
 .game-over__button {
@@ -95,7 +95,7 @@
 }
 
 .game-over__down:focus {
-  border: 1px solid #CD06FF;
+  border: 1px solid var(--color-purple);
   border-radius: 0;
 }
 

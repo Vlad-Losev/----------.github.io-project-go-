@@ -14,14 +14,14 @@
 
 .link-contacts {
   text-decoration: none;
-  color: #fff;
+  color: var(--main-color);
 }
 
 .map__text {
   display: inline-block;
   vertical-align: middle;
   text-decoration: none;
-  color: #fff;
+  color: var(--main-color);
 }
 
 .map__img {
