@@ -8,7 +8,7 @@
 
 .entertainment-cards {
   display: flex;
-  height: 570px;
+  min-height: 570px;
   gap: 20px;
 }
 
