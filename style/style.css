@@ -11,9 +11,9 @@
 @import url(./normalize.css);
 @import url(./global.style.css);
 
-* {
-  box-sizing: border-box;
-}
+html {
+  scroll-behavior: smooth;
+  }
 
 .title-h2 {
   font-weight: 700;
@@ -44,7 +44,27 @@ figure {
 }
 
 .container {
-  max-width: 1180px;
-  margin: 0 auto;
+  margin-right: 130px;
+  margin-left: 130px;
 }
 
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+   margin-right: 60px;
+   margin-left: 60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    margin-right: 40px;
+    margin-left: 40px;
+   }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    margin-right: 20px;
+    margin-left: 20px;
+   }
+}

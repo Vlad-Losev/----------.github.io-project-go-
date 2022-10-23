@@ -1,70 +1,195 @@
 .entertainment {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .entertainment__title-h2 {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .entertainment-cards {
-  display: flex;
-  min-height: 570px;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 40px;
 }
 
-.entertainment__block-flex1 {
-  align-items: flex-start;
+.img-block {
+  position: relative;
 }
-
-.entertainment__block-flex2 {
-  align-self: flex-end;
-}
-
-.entertainment__block-flex3 {
-  align-items: flex-start;
-}
-
 
 .entertainment__title-h3 {
   position: absolute;
   font-weight: 700;
   font-size: 20px;
-  line-height: 28px; 
+  line-height: 28px;
   left: 40px;
   bottom: 34px;
 }
 
-.entertainment__title-h3_indent {
-  bottom: 10px;
-}
-
-.vr-glasses {
-  position: relative;
-  margin-bottom: 38px;
+.entertainment-img {
+  width: 100%;
 }
 
 .audio-system {
-  position: relative;
-  margin-bottom: 38px;
+  padding-top: 70px;
 }
 
-.karaoke {
-  position: relative;
-  margin-bottom: 38px;
+.title-as {
+  left: 40px;
+  bottom: 12px;
 }
 
 .board-games {
-  position: relative;
+  margin-top: -70px;
 }
 
-.cinema-services {
-  position: relative;
+.title-cs {
+  left: 40px;
+  bottom: 12px;
 }
 
 .play-station {
-  position: relative;
+  margin-top: -70px;
 }
 
 .entertainment__img:hover {
   transform: scale(1.1);
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .entertainment {
+    margin-bottom: 14px;
+  }
+
+  .entertainment-cards {
+    row-gap: 30px;
+  }
+  
+  .body .entertainment__title-h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 36px;
+  }
+  
+  .entertainment__title-h3 {
+    font-size: 20px;
+    line-height: 28px; 
+    left: 20px;
+    bottom: 30px;
+  }
+  
+  .audio-system {
+    padding-top: 56px;
+  }
+
+  .board-games {
+    margin-top: -56px;
+  }
+
+  .play-station {
+    margin-top: -56px;
+  }
+
+  .title-as {
+    left: 20px;
+    bottom: 6px;
+  }
+
+  .title-cs {
+    left: 20px;
+    bottom: 6px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .entertainment {
+    margin-bottom: 60px;
+  }
+
+  .entertainment-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .body .entertainment__title-h2 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .entertainment__title-h3 {
+    font-size: 20px;
+    line-height: 28px; 
+    left: 30px;
+    bottom: 40px;
+  }
+  
+  .audio-system {
+    padding-top: 0;
+  }
+  
+  .title-as {
+    left: 40px;
+    bottom: 12px;
+  }
+  
+  .board-games {
+    margin-top: 0;
+  }
+  
+  .title-cs {
+    left: 40px;
+    bottom: 12px;
+  }
+  
+  .play-station {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .entertainment {
+    margin-bottom: 30px;
+  }
+
+  .entertainment-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .body .entertainment__title-h2 {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .entertainment__title-h3 {
+    font-size: 10px;
+    line-height: 14px; 
+    left: 10px;
+    bottom: 30px;
+  }
+  
+  .audio-system {
+    padding-top: 0;
+  }
+  
+  .title-as {
+    bottom: 16px;
+  }
+  
+  .board-games {
+    margin-top: 0;
+  }
+  
+  .title-cs {
+    bottom: 16px;
+  }
+  
+  .play-station {
+    margin-top: 0;
+  }
 }

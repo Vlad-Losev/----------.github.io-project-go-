@@ -16,6 +16,7 @@
         </a>
 
         <ul class="header__list">
+          <li class="header__menu-img"><a class="header__menu-img_link" href=""><div class="header__menu-img_img"></div></a></li>
           <li class="header__item">
             <a href="#halls" class="header__item-link header__interactive">залы</a>
           </li>
@@ -32,8 +33,8 @@
             <a href="#contacts" class="header__item-link header__interactive">Контакты</a>
           </li>
         </ul>
-        <form action="https://jsonplaceholder.typicode.com/posts"
-        method="POST" class="header__form">
+        <form class="header__form" action="https://jsonplaceholder.typicode.com/posts"
+        method="POST">
           <button class="header-button">Заказать звонок</button>
         </form>
       </nav>
@@ -67,61 +68,66 @@
           <button class="game-over__button">Забронировать</button>
         </form>
 
-        <a href="#reserved" class="game-over__down">
+        <a href="#entertainment" class="game-over__down">
           <img class="game-over__down-img" src="./style/game-over/img/down.svg" alt="стрелка вниз">
         </a>
       </section>
 
-      <section class="entertainment">
+      <section class="entertainment" id="entertainment">
         <h2 class="title-h2 entertainment__title-h2">У нас есть все для классного<br> 
           отдыха с друзьями!</h2>
 
-        <div class="entertainment-cards">
+          <div class="entertainment-cards">
             
-          <div class="entertainment__block-flex1">
             <figure class="entertainment__img vr-glasses ">
               <div class="img-block">
-                <img src="./style/entertainment/img/vr-glasses.png" alt="VR-очки">
+                <img class="entertainment-img" src="./style/entertainment/img/vr-glasses.png" alt="VR-очки">
+              
+                <h3 class="entertainment__title-h3 title-vr">VR очки</h3>
               </div>
-              <h3 class="entertainment__title-h3">VR очки</h3>
             </figure>
-
-            <figure class="entertainment__img board-games">
-              <img src="./style/entertainment/img/board-games.png" alt="настольные игры">
-
-              <h3 class="entertainment__title-h3">Настольные игры</h3>
-            </figure>
-          </div>
-
-          <div class="entertainment__block-flex2">
+      
             <figure class="entertainment__img audio-system">
-              <img src="./style/entertainment/img/audio-system.png" alt="аудио система">
-
-              <h3 class="entertainment__title-h3 entertainment__title-h3_indent">Аудио-система 5.1<br>
-              с отличным звуком</h3>
+              <div class="img-block">
+                <img class="entertainment-img" src="./style/entertainment/img/audio-system.png" alt="аудио система">
+      
+                <h3 class="entertainment__title-h3 title-as">Аудио-система 5.1<br>
+                с отличным звуком</h3>
+              </div>
             </figure>
-
-            <figure class="entertainment__img cinema-services">
-              <img src="./style/entertainment/img/cinema-services.png" alt="кино сервисы">
-
-              <h3 class="entertainment__title-h3 entertainment__title-h3_indent">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</h3>
-            </figure>
-          </div>
-          
-          <div class="entertainment__block-flex3">
+      
             <figure class="entertainment__img karaoke">
-              <img src="./style/entertainment/img/karaoke.png" alt="караоке">
-
-              <h3 class="entertainment__title-h3">Караоке (4 микрофона)</h3>
+              <div class="img-block">
+                <img class="entertainment-img" src="./style/entertainment/img/karaoke.png" alt="караоке">
+      
+                <h3 class="entertainment__title-h3 title-k">Караоке (4 микрофона)</h3>
+              </div>
             </figure>
-
+      
+            <figure class="entertainment__img board-games">
+              <div class="img-block">
+                <img class="entertainment-img" src="./style/entertainment/img/board-games.png" alt="настольные игры">
+      
+              <h3 class="entertainment__title-h3 title-bg">Настольные игры</h3>
+              </div>
+            </figure>
+      
+            <figure class="entertainment__img cinema-services">
+              <div class="img-block">
+                <img class="entertainment-img" src="./style/entertainment/img/cinema-services.png" alt="кино сервисы">
+      
+              <h3 class="entertainment__title-h3 title-cs">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</h3>
+              </div>
+            </figure>
+      
              <figure class="entertainment__img play-station">
-              <img src="./style/entertainment/img/play-station.png" alt="игровая приставка">
-
-              <h3 class="entertainment__title-h3">РlаyStаtiоn 5</h3>
+              <div class="img-block">
+                <img class="entertainment-img" src="./style/entertainment/img/play-station.png" alt="игровая приставка">
+      
+              <h3 class="entertainment__title-h3 title-ps">РlаyStаtiоn 5</h3>
+              </div>
             </figure>
-          </div>
-
+        </div>
       </section>
     
       <section class="halls" id="halls">
@@ -130,25 +136,25 @@
         <figure class="halls__img-80vibes halls__img">
           <img src="./style/halls/img/80-vibes.png" alt="Стиль восьмидесятых">
 
-          <h3 class="halls__title-80vibes halls__title-h3">80’s vibes</h3>
+          <h3 class="halls__title-80vibes halls__title-h3">80’s<br> vibes</h3>
         </figure>
 
         <figure class="halls__img-star-wars halls__img">
           <img src="./style/halls/img/star-wars.png" alt="Стиль звездных войн">
 
-          <h3 class="halls__title-star-wars halls__title-h3">star wars</h3>
+          <h3 class="halls__title-star-wars halls__title-h3">star<br> wars</h3>
         </figure>
 
         <figure class="halls__img-wild-west halls__img">
           <img src="./style/halls/img/wild-west.png" alt="Стиль дикого запада">
 
-          <h3 class="halls__title-wild-west halls__title-h3">wild west</h3>
+          <h3 class="halls__title-wild-west halls__title-h3">wild<br> west</h3>
         </figure>
 
         <figure class="halls__img-neon-style halls__img">
           <img src="./style/halls/img/neon-style.png" alt="Стиль неон">
 
-          <h3 class="halls__title-h3 halls__title-neon-style">neon style</h3>
+          <h3 class="halls__title-h3 halls__title-neon-style">neon<br> style</h3>
         </figure>
       </section>
     </div>
@@ -163,22 +169,22 @@
             <fieldset class="reserved-hall">
               <legend class="reserved__title-legend">Выбери зал</legend>
 
-              <div class="reserved__radio-label">
+              <div class="reserved__radio-label reserved-80s">
                 <input class="radio-hall" type="radio" name="room" value="80's vibes" id="room1">
                 <label class="reserved__label" for="room1">80's vibes</label>
               </div>
 
-              <div class="reserved__radio-label">
+              <div class="reserved__radio-label reserved-sw">
                 <input class="radio-hall" type="radio" name="room" value="star wars" id="room2">
                 <label class="reserved__label" for="room2">star wars</label>
               </div>
 
-              <div class="reserved__radio-label">
+              <div class="reserved__radio-label reserved-ww">
                 <input class="radio-hall" type="radio" name="room" value="wild west" id="room3">
                 <label class="reserved__label" for="room3">wild west</label>
               </div>
 
-              <div class="reserved__radio-label">
+              <div class="reserved__radio-label reserved-ns">
                 <input class="radio-hall" type="radio" name="room" value="neon style" id="room4">
                 <label class="reserved__label" for="room4">neon style</label>
               </div>
@@ -188,7 +194,7 @@
               <legend class="reserved__title-legend">Собери набор развлечений</legend>
 
               <div class="gaiety-wrapper">
-                <fieldset>
+                <fieldset class="block-console">
                   <legend class="gaiety__legend">Приставка</legend>
 
                   <ul class="gaiety-list">
@@ -211,7 +217,7 @@
                   </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="block-board-games">
                   <legend class="gaiety__legend">Настольные игры</legend>
 
                   <ul class="gaiety-list">
@@ -234,7 +240,7 @@
                   </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="extra">
                   <legend class="gaiety__legend">Дополнительно</legend>
 
                   <ul class="gaiety-list">
@@ -252,43 +258,40 @@
             </fieldset>
 
             <fieldset class="order">
-              <legend class="reserved__title-legend">Выбери дату и время</legend>
-
+              <legend class="reserved__title-legend reserved-title">Выбери дату и время</legend>
+            
               <div class="order__wrapper-date">
-                <div class="order__wrapper-block1">
-                  <input class="order__input-focus order__input-size2 order__input" type="date" name="date" id="date" required>
-
-                  <input class="order__input-focus order__input-size2 order__input" type="time" name="time" id="time" required>
-
-                  <input class="order__input-focus order__input-size3 order__input-number" type="number" name="amount" id="amount" placeholder="Сколько человек" required>
-                </div>
-
-                <div class="order__wrapper-block2">
-                  <label class="order__label-name" for="name">Имя
+                  <div class="date-time">
+                    <input class="order__input-focus order__input-size2 order__input" type="date" name="date" id="date" required>
+            
+                    <input class="order__input-focus order__input-size2 order__input" type="time" name="time" id="time" required>
+                  </div>
+                  
+                  <div class="wrapper-name order-name">
+                    <label class="order__label-name" for="name">Имя
                     <input class="order__input-focus order__input-name order__input-size" type="search" name="name" id="name">
                   </label>
+                  </div>
                   
-                  <label class="order__label-name" for="tel">Телефон
+                  <label class="order__label-name order-phone" for="tel">Телефон
                     <input class="order__input-focus order__input-name order__input-size3" type="tel" name="tel" id="tel" required>
                   </label>
-
-                  <label class="order__label-name" for="surname">Фамилия
+            
+                  <input class="order__input-focus order__input-size3 order__input-number" type="number" name="amount" id="amount" placeholder="Сколько человек" required>
+            
+                  <div class="wrapper-name order-surname">
+                    <label class="order__label-name" for="surname">Фамилия
                     <input class="order__input-focus order__input-name order__input-size" type="search" name="surname" id="surname" required>
                   </label>
-
-                  <label class="order__label-name" for="email">E-mail
+                  </div>
+                  
+                  <label class="order__label-name order-email" for="email">E-mail
                     <input class="order__input-focus order__input-name order__input-size3" type="email" name="email" id="email">
                   </label>
-                </div>
-                
-                <!-- <input type="checkbox" name="age" value="yes" id="age">
-                <label for="age">Я старше 18 лет</label> -->
+                  
+                    <button class="order-button" type="submit">Забронировать</button>
               </div>
             </fieldset>
-
-            <button class="order-button" type="submit">Забронировать</button>
-            <!-- <input type="checkbox" name="agreement" value="agreement" id="agrement">
-            <label for="agrement">Согласен на обработку данных</label> -->
 
           </form>
         </section>
@@ -301,18 +304,19 @@
           <img class="about-us__img" src="./style/about-us/img/about-us-img.png" alt="Игровая атрибутика">
 
           <p class="about-us__p about-us__p_one">
-            Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности<br> в центральной части города.
+            Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.
           </p>
           
-          <p class="about-us__p">
-            Каждый день мы стараемся создавать<br> для вас самую лучшую игровую атмосферу<br> и радовать Вас топовыми игровыми 
-            разработками<br> со всего мира.
+          <p class="about-us__p about-us__p_two">
+            Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми 
+            разработками со всего мира.
           </p>
 
-          <q class="quote">
+          <div class="wrapper-quote">
+            <q class="quote">
             <span class="quote__quotes quote__quotes-1">&#8220;</span>
             
-              GAME OVER —<br>
+              <span class="quote__wrapper-text_GO">GAME OVER —</span> 
               <span class="quote__wrapper-text">это место
               </span>   
               <span class="quote__wrapper-text">  
@@ -322,8 +326,9 @@
                 впечатлений
               </span> 
                 <span class="quote__quotes quote__quotes-2">&#8221;</span>
-            
-          </q>
+            </q>
+          </div>
+          
 
           <figure class="photo">
             <figcaption class="photo__sign">Аркадий Абакшин,<br>
@@ -347,7 +352,7 @@
 
               <figcaption class="reviews-figure__text">Макс Самойлов</figcaption>
             </figure>
-            <p class="reviews__text">Отмечали здесь день рождения с компанией друзей, все было очень<br> круто! VR очки это просто бомба, никогда еще я не был в таком полном<br> игровом погружении. Сервис на высоте!</p>
+            <p class="reviews__text reviews__text_1">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
           </article>
 
           <article class="reviews">
@@ -358,7 +363,7 @@
 
               <figcaption class="reviews-figure__text">Оксана Григорьева</figcaption>
             </figure>
-            <p class="reviews__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный<br> получился корпоратив! У нас в городе больше нет подобных заведений</p>
+            <p class="reviews__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
           </article>
 
           <article class="reviews">
@@ -369,7 +374,7 @@
               
               <figcaption class="reviews-figure__text">Никита Ященко</figcaption>
             </figure>
-            <p class="reviews__text">Немного подвисала игра в VR очках, а так все норм. Крутое<br> оформление комнаты в стиле звездных войн, попал в атмосферу<br> космоса</p>
+            <p class="reviews__text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса</p>
           </article>
         </section>
 
@@ -381,35 +386,63 @@
               <div class="faq__text">Можно ли забронировать комнату онлайн?</div>
 
               <a href="#" class="faq-link">
-                <img class="faq-link__img" src="./style/faq/img/open-purple.svg" alt="#">
+
+                <svg class="faq-link__img faq-svg" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.8306 14H23.5086V34H22.8306V14Z" fill="#440F51"/>
+                  <path d="M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z" fill="#440F51"/>
+                  <circle class="faq-svg" cx="23.0001" cy="23" r="22" stroke="#440F51" stroke-width="2"/>
+                </svg>
+
               </a>
             </li>
             <li class="list__item">
               <div class="faq__text">Могут ли мне вернуть деньги за бронь?</div>
 
               <a href="#" class="faq-link">
-                <img class="faq-link__img faq-link__img_purple" src="./style/faq/img/open.svg" alt="#">
+
+                <?xml version="1.0" encoding="UTF-8"?><svg class="faq-link__img faq-link__img_purple faq-svg" fill="none" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m22.831 14h0.678v20h-0.678v-20z" fill="#fff"/>
+                  <path d="m13 24.17v-0.678h20v0.678h-20z" fill="#fff"/>
+                  <circle class="faq-svg" cx="23" cy="23" r="22" stroke="#fff" stroke-width="2"/></svg>
+
               </a>
             </li>
             <li class="list__item">
               <div class="faq__text">Какая комната самая популярная?</div>
 
               <a href="#" class="faq-link">
-                <img class="faq-link__img" src="./style/faq/img/open-purple.svg" alt="#">
+
+                <svg class="faq-link__img faq-svg" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.8306 14H23.5086V34H22.8306V14Z" fill="#440F51"/>
+                  <path d="M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z" fill="#440F51"/>
+                  <circle class="faq-svg" cx="23.0001" cy="23" r="22" stroke="#440F51" stroke-width="2"/>
+                </svg>
+
               </a>
             </li>
             <li class="list__item">
               <div class="faq__text">Как получить VIP карту?</div>
 
               <a href="#" class="faq-link">
-                <img class="faq-link__img faq-link__img_purple" src="./style/faq/img/open.svg" alt="#">
+
+                <?xml version="1.0" encoding="UTF-8"?><svg class="faq-link__img faq-link__img_purple faq-svg" fill="none" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m22.831 14h0.678v20h-0.678v-20z" fill="#fff"/>
+                  <path d="m13 24.17v-0.678h20v0.678h-20z" fill="#fff"/>
+                  <circle class="faq-svg" cx="23" cy="23" r="22" stroke="#fff" stroke-width="2"/></svg>
+
               </a>
             </li>
             <li class="list__item">
               <div class="faq__text">Какая комната самая популярная?</div>
 
               <a href="#" class="faq-link">
-                <img class="faq-link__img" src="./style/faq/img/open-purple.svg" alt="#">
+
+                <svg class="faq-link__img faq-svg" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.8306 14H23.5086V34H22.8306V14Z" fill="#440F51"/>
+                  <path d="M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z" fill="#440F51"/>
+                  <circle class="faq-svg" cx="23.0001" cy="23" r="22" stroke="#440F51" stroke-width="2"/>
+                </svg>
+                
               </a>
             </li>
           </ul>
@@ -429,7 +462,7 @@
                 <div class="map__indent">
                   <img class="map__img contacts__interactive" src="./style/contacts/img/location.svg" alt="Значок локации">
 
-                  <span class="map__text">г. Москва<br> ул. Аквамарина, 16</span>
+                  <span class="map__text">г. Москва<br> ул. Усачёва, 29 к3</span>
                 </div>
               </a><br>
             </div>
@@ -438,7 +471,7 @@
               <a class="link-contacts link-tel" href="tel:89509302893">
                 <img class="link-tel__tel-img contacts__interactive" src="./style/contacts/img/phone.svg" alt="Значок телефона" >
 
-                <span class="link-tel__tel-text">8(950)930-28-93</span>
+                <span class="link-tel__tel-text">8 (950) 930-28-93</span>
               </a><br>
             </div>
 
@@ -453,7 +486,7 @@
               <li class="network-list__item"><a href="#"><img src="./style/contacts/img/vk.svg" alt="Вконтакте"></a></li>
               <li class="network-list__item"><a href="#"><img src="./style/contacts/img/telegram.svg" alt="Телеграм"></a></li>
               <li class="network-list__item"><a href="#"><img src="./style/contacts/img/pinterest.svg" alt="pinterest"></a></li>
-              <li class="network-list__item"><a href="#"><img src="./style/contacts/img/stumbleupon.svg" alt="stumbleupon"></a></li>
+              <li class="network-list__item network-list__item_indent"><a href="#"><img src="./style/contacts/img/stumbleupon.svg" alt="stumbleupon"></a></li>
             </ul>
           </div>
           <img class="footer__img-map" src="./style/contacts/img/map.png" alt="карта" >

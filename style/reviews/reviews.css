@@ -8,7 +8,8 @@
 
 .reviews {
   display: flow-root;
-  
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 .reviews:not(:last-child) {
@@ -19,7 +20,6 @@
   display: inline-block;
   float: left;
   margin-right: 20px;
-  margin-left: 100px;
 }
 
 .reviews-figure__img {
@@ -56,4 +56,137 @@
   font-size: 20px;
   line-height: 28px;
   padding-top: 55px;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .reviews-section {
+    margin-bottom: 70px;
+  }
+
+  .body .reviews-section__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 26px;
+  }
+
+  .reviews-figure {
+    margin-right: 38px;
+  }
+
+  .reviews-figure__img {
+    width: 172px;
+    height: 172px;
+    margin-bottom: 20px;
+  }
+
+  .reviews-gradient::after {
+    background-size: contain;
+  }
+
+  .reviews-figure__text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .reviews__text_1 {
+    padding-top: 37px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .reviews-section {
+    margin-bottom: 60px;
+  }
+
+  .body .reviews-section__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 31px;
+  }
+
+  .reviews {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+
+  .reviews-figure {
+    margin-right: 15px;
+  }
+
+  .reviews-figure__img {
+    width: 153px;
+    height: 153px;
+    margin-bottom: 17px;
+  }
+
+  .reviews-gradient::after {
+    background-size: contain;
+  }
+
+  .reviews-figure__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .reviews__text {
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 38px;
+  }
+
+  .reviews__text_1 {
+    padding-top: 32px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .reviews-section {
+    margin-bottom: 30px;
+  }
+
+  .body .reviews-section__title {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+
+  .body .reviews {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  .reviews-figure {
+    float: none;
+    margin-right: 0;
+  }
+
+  .reviews-figure__img {
+    width: 86px;
+    height: 86px;
+    margin-bottom: 9px;
+  }
+
+  .reviews-gradient::after {
+    background-size: contain;
+  }
+
+  .reviews-figure__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+
+  .reviews__text {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    padding-top: 0;
+  }
 }

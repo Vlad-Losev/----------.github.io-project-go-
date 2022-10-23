@@ -70,6 +70,8 @@
   background: #6C0287;
   color: #FFFFFF;
   border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 15px #6c0287;
   padding: 25px 69px;
 }
 
@@ -103,4 +105,167 @@
   background: #CD06FF;
   border: 1px solid #CD06FF;
   border-radius: 50%;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .game-over {
+    min-height: 600px;
+  }
+
+  .body .game-over__title {
+    font-size: 120px;
+    margin-bottom: 20px;
+  }
+
+  .game-over__text {
+    font-size: 22px;
+  }
+
+  .four__number {
+    font-size: 80px;
+    line-height: 112px;
+  }
+
+  .new__new {
+    font-size: 60px;
+    line-height: 84px;
+  }
+
+  .game-over-flex__text {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .game-over-flex {
+    margin-bottom: 80px;
+  }
+
+  .game-over__button {
+    font-size: 22px;
+    padding: 17px 48px;
+    margin-left: 40px;
+  }
+
+  .game-over__title::after {
+    width: 453px;
+    height: 520px;
+    background-size: 453px 520px;
+  }
+
+  .game-over__down {
+    width: 67px;
+    height: 67px;
+    left: 420px;
+    bottom: 55px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .game-over {
+    min-height: 550px;
+  }
+
+  .body .game-over__title {
+    font-size: 86px;
+    margin-bottom: 20px;
+  }
+
+  .game-over__text {
+    font-size: 18px;
+    padding-left: 65px;
+    margin-bottom: 40px;
+  }
+
+  .four__number {
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  .new__new {
+    font-size: 40px;
+    line-height: 51px;
+  }
+
+  .game-over-flex__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .game-over-flex {
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+
+  .game-over__button {
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 11px 35px;
+  }
+
+  .game-over__title::after {
+    width: 409px;
+    height: 479px;
+    background-size: 409px 479px;
+  }
+
+  .game-over__down {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .game-over {
+    min-height: 248px;
+    margin-bottom: 0px;
+  }
+
+  .body .game-over__title {
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 6px;
+  }
+
+  .game-over__text {
+    font-size: 10px;
+    line-height: 14px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .four__number {
+    font-size: 26px;
+    line-height: 37px;
+  }
+
+  .new__new {
+    font-size: 22px;
+    line-height: 31px;
+  }
+
+  .game-over-flex__text {
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .game-over-flex {
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .game-over__button {
+    font-size: 10px;
+    line-height: 12px;
+    border-radius: 4px;
+    padding: 8px 13px;
+  }
+
+  .game-over__title::after {
+    width: 161px;
+    height: 179px;
+    background-size: 161px 179px;
+    top: 25px;
+  }
+
+  .game-over__down {
+    display: none;
+  }
 }

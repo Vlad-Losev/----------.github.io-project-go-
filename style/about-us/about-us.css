@@ -1,9 +1,10 @@
 .about-us {
+  padding-top: 100px;
   margin-bottom: 100px;
 }
 
 .about-us__title {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .about-us__img {
@@ -14,21 +15,37 @@
 .about-us__p {
   font-weight: 400;
   font-size: 20px;
-  margin-bottom: 50px;
   line-height: 28px;
+  margin-bottom: 50px;
 }
 
 .about-us__p_one {
   margin-bottom: 35px;
 }
 
+.wrapper-quote {
+  display: inline-block;
+  width: 450px;
+  padding-left: 35px;
+}
+
 .quote {
+  position: relative;
   quotes: none;
   font-weight: 400;
   font-size: 44px;
   text-transform: uppercase;
   margin-bottom: 40px;
   display: inline;
+}
+
+.quote__quotes-1 {
+  position: absolute;
+  left: -35px;
+}
+
+.quote__wrapper-text_GO {
+  padding-right: 10px;
 }
 
 .quote__quotes {
@@ -38,7 +55,6 @@
 
 .quote__wrapper-text {
   display: inline;
-  padding-left: 35px;
 }
 
 .photo__sign {
@@ -55,9 +71,180 @@
 }
 
 .photo {
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 .photo_clear {
   clear:both;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .about-us {
+    padding-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .body .about-us__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 26px;
+  }
+
+  .about-us__img {
+    width: 420px;
+    height: 417px;
+    margin-right: 40px;
+  }
+
+  .about-us__p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 21px;
+  }
+
+  .wrapper-quote {
+    width: 415px;
+  }
+
+  .quote {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 13px;
+  }
+
+  .photo {
+    padding-top: 45px;
+  }
+
+  .photo__img-photo {
+    width: 70px;
+    height: 70px;
+    margin-right: 35px;
+  }
+
+  .photo__sign {
+    font-size: 18px;
+    line-height: 26px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about-us {
+    padding-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .body .about-us__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  .about-us__img {
+    width: 382px;
+    height: 380px;
+    margin-right: 28px;
+    margin-bottom: 30px;
+  }
+
+  .about-us__p_one {
+    padding-top: 67px;
+  }
+
+  .about-us__p_two {
+    margin-bottom: 85px;
+  }
+
+  .about-us__p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .wrapper-quote {
+    width: 600px;
+  }
+
+  .quote {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+
+  .photo {
+    padding-top: 16px;
+  }
+
+  .photo__img-photo {
+    width: 70px;
+    height: 70px;
+    margin-right: 25px;
+  }
+
+  .photo__sign {
+    font-size: 18px;
+    line-height: 26px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .body .about-us__title {
+    font-size: 14px;
+    line-height: 18px;
+    order: -2;
+    margin-bottom: 15px;
+  }
+
+  .about-us__img {
+    width: 100%;
+    min-height: 280px;
+    margin-right: 28px;
+    margin-bottom: 20px;
+  }
+
+  .about-us__p {
+    font-size: 12px;
+    line-height: 16px;
+    order: -1;
+    margin-bottom: 15px;
+  }
+
+  .wrapper-quote {
+    width: 280px;
+    padding-left: 13px;
+  }
+
+  .quote {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 9px;
+  }
+
+  .quote__quotes-1 {
+    left: -13px;
+  }
+
+  .photo {
+    padding-top: 16px;
+  }
+
+  .photo__img-photo {
+    width: 56px;
+    height: 56px;
+    margin-right: 11px;
+  }
+
+  .photo__sign {
+    font-size: 12px;
+    line-height: 16px;
+    margin-right: 0;
+  }
 }

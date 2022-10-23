@@ -4,7 +4,8 @@
 }
 
 .halls__title {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
+  line-height: 50px;
 }
 
 .halls__title-h3 {
@@ -13,7 +14,7 @@
   text-align: center;
   text-transform: uppercase;
   width: 100%;
-  top: 140px;
+  top: 27%;
 }
 
 .halls__img {
@@ -60,4 +61,66 @@
 
 .halls__title-neon-style {
   position: absolute;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .halls {
+    margin-bottom: 70px;
+  }
+  
+  .body .halls__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 37px;
+  }
+  
+  .halls__title-h3 {
+    font-size: 50px;
+  }
+  
+  .halls__img {
+    max-width: 48.8%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .halls {
+    margin-bottom: 62px;
+  }
+  
+  .body .halls__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 35px;
+  }
+  
+  .halls__title-h3 {
+    font-size: 40px;
+  }
+  
+  .halls__img {
+    max-width: 48.5%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .halls {
+    margin-bottom: 20px;
+  }
+  
+  .body .halls__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .halls__title-h3 {
+    font-size: 26px;
+    top: 35%;
+  }
+  
+  .halls__img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
 }
