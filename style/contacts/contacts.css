@@ -132,6 +132,18 @@
   background: #676167;
 }
 
+.copyright-link:hover {
+  background: #3a363a;
+}
+
+.copyright-link:focus {
+  background: #595359;
+}
+
+.copyright-link:active {
+  background: #676167;
+}
+
 @media (min-width:1024px) and (max-width: 1339px) {
   .body .contacts__title {
     font-size: 30px;

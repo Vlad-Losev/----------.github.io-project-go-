@@ -16,7 +16,7 @@
         </a>
 
         <ul class="header__list">
-          <li class="header__menu-img"><a class="header__menu-img_link" href=""><div class="header__menu-img_img"></div></a></li>
+          <li class="header__menu-img"><a class="header__menu-img_link" href="#"><div class="header__menu-img_img"></div></a></li>
           <li class="header__item">
             <a href="#halls" class="header__item-link header__interactive">залы</a>
           </li>
@@ -63,10 +63,12 @@
           </div>
         </div>
 
-        <form action="https://jsonplaceholder.typicode.com/posts"
-        method="POST" class="game-over__form">
+        <!-- <form action="https://jsonplaceholder.typicode.com/posts"
+        method="POST" class="game-over__form"> -->
+        <a class="game-over__linl" href="#reserved">
           <button class="game-over__button">Забронировать</button>
-        </form>
+        </a>
+        <!-- </form> -->
 
         <a href="#entertainment" class="game-over__down">
           <img class="game-over__down-img" src="./style/game-over/img/down.svg" alt="стрелка вниз">
@@ -385,7 +387,7 @@
             <li class="list__item">
               <div class="faq__text">Можно ли забронировать комнату онлайн?</div>
 
-              <a href="#" class="faq-link">
+              <a class="faq-link" href="#" onclick="return false">
 
                 <svg class="faq-link__img faq-svg" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22.8306 14H23.5086V34H22.8306V14Z" fill="#440F51"/>
@@ -398,7 +400,7 @@
             <li class="list__item">
               <div class="faq__text">Могут ли мне вернуть деньги за бронь?</div>
 
-              <a href="#" class="faq-link">
+              <a class="faq-link" href="#" onclick="return false">
 
                 <?xml version="1.0" encoding="UTF-8"?><svg class="faq-link__img faq-link__img_purple faq-svg" fill="none" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
                   <path d="m22.831 14h0.678v20h-0.678v-20z" fill="#fff"/>
@@ -410,7 +412,7 @@
             <li class="list__item">
               <div class="faq__text">Какая комната самая популярная?</div>
 
-              <a href="#" class="faq-link">
+              <a class="faq-link" href="#" onclick="return false">
 
                 <svg class="faq-link__img faq-svg" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22.8306 14H23.5086V34H22.8306V14Z" fill="#440F51"/>
@@ -423,7 +425,7 @@
             <li class="list__item">
               <div class="faq__text">Как получить VIP карту?</div>
 
-              <a href="#" class="faq-link">
+              <a class="faq-link" href="#" onclick="return false">
 
                 <?xml version="1.0" encoding="UTF-8"?><svg class="faq-link__img faq-link__img_purple faq-svg" fill="none" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
                   <path d="m22.831 14h0.678v20h-0.678v-20z" fill="#fff"/>
@@ -435,7 +437,7 @@
             <li class="list__item">
               <div class="faq__text">Какая комната самая популярная?</div>
 
-              <a href="#" class="faq-link">
+              <a class="faq-link" href="#" onclick="return false">
 
                 <svg class="faq-link__img faq-svg" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22.8306 14H23.5086V34H22.8306V14Z" fill="#440F51"/>
@@ -458,7 +460,7 @@
         <div class="footer-wrapper1">
           <div class="footer-wrapper2">
             <div class="wrapper-map">
-              <a class="map" href="#">
+              <a class="map" href="#" onclick="return false">
                 <div class="map__indent">
                   <img class="map__img contacts__interactive" src="./style/contacts/img/location.svg" alt="Значок локации">
 
@@ -483,10 +485,10 @@
             </div>
 
             <ul class="network-list">
-              <li class="network-list__item"><a href="#"><img src="./style/contacts/img/vk.svg" alt="Вконтакте"></a></li>
-              <li class="network-list__item"><a href="#"><img src="./style/contacts/img/telegram.svg" alt="Телеграм"></a></li>
-              <li class="network-list__item"><a href="#"><img src="./style/contacts/img/pinterest.svg" alt="pinterest"></a></li>
-              <li class="network-list__item network-list__item_indent"><a href="#"><img src="./style/contacts/img/stumbleupon.svg" alt="stumbleupon"></a></li>
+              <li class="network-list__item"><a href="#" onclick="return false"><img src="./style/contacts/img/vk.svg" alt="Вконтакте"></a></li>
+              <li class="network-list__item"><a href="#" onclick="return false"><img src="./style/contacts/img/telegram.svg" alt="Телеграм"></a></li>
+              <li class="network-list__item"><a href="#" onclick="return false"><img src="./style/contacts/img/pinterest.svg" alt="pinterest"></a></li>
+              <li class="network-list__item network-list__item_indent"><a href="#" onclick="return false"><img src="./style/contacts/img/stumbleupon.svg" alt="stumbleupon"></a></li>
             </ul>
           </div>
           <img class="footer__img-map" src="./style/contacts/img/map.png" alt="карта" >
@@ -497,9 +499,11 @@
             © Game Over, 2022
           </p>
 
-          <p class="copyright__text">
-            <span class="copyright__text-indent"> Design by Anastasia Ilina<br> ilina9825@gmail.com</span>
-          </p>
+          <a href="#" class="copyright-link" onclick="return false">
+            <p class="copyright__text">
+              <span class="copyright__text-indent"> Design by Anastasia Ilina<br> ilina9825@gmail.com</span>
+            </p>
+          </a>
         </div>
 
       </section>
