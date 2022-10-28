@@ -48,6 +48,10 @@ figure {
   margin-left: 130px;
 }
 
+:focus, :active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 @media (min-width: 1024px) and (max-width: 1439px) {
   .container {
    margin-right: 60px;
